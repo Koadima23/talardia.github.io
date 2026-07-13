@@ -1,0 +1,95 @@
+/* Hide icon circles in bio section */
+.flex-shrink-0.w-12.h-12.rounded-full {
+  display: none !important;
+}
+
+/* Hide Education section */
+.resume-biography .mb-16 {
+  display: none !important;
+}
+
+/* Hide Interests section */
+.resume-biography .flex.flex-wrap.gap-3 {
+  display: none !important;
+}
+
+/* Hide Interests heading */
+.resume-biography h3 {
+  display: none !important;
+}
+
+/* Hide social links under name */
+.resume-biography .social-links,
+.resume-biography .flex.justify-center.gap-3 {
+  display: none !important;
+}
+
+.resume-biography a[href^="mailto"],
+.resume-biography .social-links {
+  display: none !important;
+}
+
+/* Remove excessive padding from bio section */
+.resume-biography {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+/* Hide theme toggle, search and dropdown from nav */
+.navbar button,
+.navbar .theme-toggle,
+[data-toggle="search"],
+[data-toggle="theme"] {
+  display: none !important;
+}
+
+.resume-biography .grid.grid-cols-1.md\:grid-cols-12 {
+  align-items: center;
+}
+
+/* Name and role under the photo, smaller font */
+.resume-biography h1 {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+}
+
+.resume-biography p.text-2xl.font-semibold {
+  font-size: 0.95rem !important;
+}
+
+.resume-biography p.text-lg.text-gray-700 {
+  font-size: 0.9rem !important;
+}
+
+.resume-biography .bio-text p:first-child {
+  font-size: 1.3rem;
+}
+
+/* Hide "X min read" metadata on standalone pages */
+article .mt-4.mb-16 {
+  display: none !important;
+}
+
+/* Hide social share buttons at bottom of standalone pages */
+article section.flex.flex-row.flex-wrap.justify-center {
+  display: none !important;
+}
+
+/* Page title on standalone pages */
+article h1 {
+  font-size: 1.75rem !important;
+  margin-bottom: 3rem !important;
+}
+
+/* Light navy/blue tint background */
+body {
+  background-color: #ffffff !important;
+}
+
+/* White background for the whole page */
+body {
+  background-color: #ffffff !important;
+}
+
+/* Very light navy tint behind photo only */

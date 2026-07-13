@@ -11,6 +11,10 @@ imports:
 
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
+  - source: layouts/_partials/blox/resume-biography-3
+    target: layouts/_partials/blox/resume-biography-3
+    files:
+      - '**.html'
   - source: hugo-blox/blox/community
     target: layouts/_partials/blox/community/
     files:
