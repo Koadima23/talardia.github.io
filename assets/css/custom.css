@@ -93,3 +93,46 @@ body {
 }
 
 /* Very light navy tint behind photo only */
+
+/* Hide footer links */
+.site-footer a[href*="hugoblox"],
+.site-footer a[href*="hugo.chat"],
+.site-footer a[href*="creativecommons"] {
+  display: none !important;
+}
+
+/* Hide "Made with" and "Duplicate" text */
+.site-footer p:last-child {
+  display: none !important;
+}
+
+/* Hide footer license icons */
+.powered-by.footer-license-icons {
+  display: none !important;
+}
+
+/* Hide "Made with Hugo Blox" and "Duplicate this template" */
+.powered-by.text-sm.opacity-80 {
+  display: none !important;
+}
+
+/* Hide CC license text */
+.powered-by:not(.footer-license-icons):not(.text-sm) {
+  display: none !important;
+}
+
+
+/* Hide footer license icons */
+.powered-by.footer-license-icons {
+  display: none !important;
+}
+
+/* Hide "Made with Hugo Blox" and "Duplicate this template" */
+.powered-by.opacity-80 {
+  display: none !important;
+}
+
+/* Hide entire footer */
+footer.container {
+  display: none !important;
+}
