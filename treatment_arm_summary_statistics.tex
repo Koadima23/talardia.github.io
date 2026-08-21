@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.65in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{adjustbox}
+\usepackage{pdflscape}
+
+\begin{document}
+
+\begin{landscape}
+\begin{table}[!htbp]
+\centering
+\caption{Summary Statistics and Pairwise Comparisons of Bids by Treatment Arm}
+\label{tab:treatment_arm_summary}
+
+\begin{adjustbox}{max width=\linewidth, max totalheight=0.87\textheight, keepaspectratio}
+\begin{threeparttable}
+\small
+\renewcommand{\arraystretch}{1.08}
+\setlength{\tabcolsep}{6pt}
+
+\begin{tabular}{lccccc}
+\toprule
+& \multicolumn{5}{c}{Treatment arm} \\
+\cmidrule(lr){2-6}
+& Control
+& Proportional revenue
+& Marginal cost
+& Bundle without reserve
+& Bundle with marginal cost \\
+\midrule
+
+\multicolumn{6}{l}{\textit{Panel A: All bids}} \\[2pt]
+Mean
+    & 94,927 & 66,164 & 91,770 & 153,371 & 153,973 \\
+Standard deviation
+    & 73,327 & 53,091 & 68,608 & 130,984 & 106,303 \\
+Median
+    & 65,000 & 50,000 & 75,000 & 120,000 & 115,000 \\
+Variance
+    & 5,376,833,859 & 2,818,664,219 & 4,707,102,716
+    & 17,156,904,066 & 11,300,343,101 \\
+Minimum
+    & 0 & 0 & 0 & 0 & 0 \\
+Maximum
+    & 315,000 & 275,000 & 300,000 & 700,000 & 650,000 \\
+Observations
+    & 243 & 245 & 243 & 241 & 237 \\
+
+\addlinespace
+\multicolumn{6}{l}{\textit{Panel B: Bids above the reserve price, excluding zero bids}} \\[2pt]
+Mean
+    & 96,516 & 70,271 & 93,254 & 154,654 & 158,871 \\
+Standard deviation
+    & 72,892 & 53,160 & 68,201 & 130,774 & 104,703 \\
+Median
+    & 70,000 & 50,000 & 75,000 & 120,000 & 125,000 \\
+Variance
+    & 5,313,218,633 & 2,826,000,824 & 4,651,444,015
+    & 17,101,757,348 & 10,962,716,446 \\
+Zero bids (\%)
+    & 1.6 & 2.0 & 1.2 & 0.8 & 2.5 \\
+Observations
+    & [TBD] & [TBD] & [TBD] & [TBD] & [TBD] \\
+
+\midrule
+\multicolumn{6}{l}{\textit{Panel C: Pairwise $t$-tests}} \\[2pt]
+Control
+    & --- & $4.45^{***}$ & $0.51$ & $-6.00^{***}$ & $-7.45^{***}$ \\
+Proportional revenue
+    & & --- & $-4.06^{***}$ & $-9.20^{***}$ & $-11.40^{***}$ \\
+Marginal cost
+    & & & --- & $-6.44^{***}$ & $-8.00^{***}$ \\
+Bundle without reserve
+    & & & & --- & $-0.39$ \\
+
+\addlinespace
+\multicolumn{6}{l}{\textit{Panel D: Pairwise Mann--Whitney tests}} \\[2pt]
+Control
+    & --- & $4.08^{***}$ & $0.15$ & $-5.90^{***}$ & $-8.70^{***}$ \\
+Proportional revenue
+    & & --- & $-4.10^{***}$ & $-9.41^{***}$ & $-12.37^{***}$ \\
+Marginal cost
+    & & & --- & $-6.09^{***}$ & $-9.04^{***}$ \\
+Bundle without reserve
+    & & & & --- & $-1.93^{*}$ \\
+
+\addlinespace
+\multicolumn{6}{l}{\textit{Panel E: Pairwise Levene tests for equality of variances}} \\[2pt]
+Control
+    & --- & $29.99^{***}$ & $2.28$ & $22.58^{***}$ & $12.18^{***}$ \\
+Proportional revenue
+    & & --- & $14.95^{***}$ & $58.77^{***}$ & $53.41^{***}$ \\
+Marginal cost
+    & & & --- & $31.49^{***}$ & $20.92^{***}$ \\
+Bundle without reserve
+    & & & & --- & $2.94^{*}$ \\
+
+\bottomrule
+\end{tabular}
+
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} Panels C--E report pairwise test statistics comparing the row
+treatment to the column treatment. Only cells above the diagonal are populated; a
+cell below the diagonal would be a duplicate of the corresponding above-diagonal
+entry elsewhere in the table, so it is left blank and each pairwise comparison
+appears exactly once. Because of this, the final treatment arm, ``Bundle with
+marginal cost,'' is represented only as a column and has no corresponding row.
+``Bundle without reserve'' denotes the bundle treatment without a reserve price.
+Significance levels: $^{***}p<0.01$, $^{**}p<0.05$, and $^{*}p<0.10$.
+\end{tablenotes}
+
+\end{threeparttable}
+\end{adjustbox}
+\end{table}
+\end{landscape}
+
+\end{document}

@@ -1,0 +1,158 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.8in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{caption}
+\usepackage{adjustbox}
+
+\begin{document}
+
+\begin{table}[!htbp]
+\centering
+\caption{Individual Bidding by Auction Mechanism and Information Type, with Dealer Controls}
+\label{tab:dealer_controls_revised_treatments}
+
+\begin{adjustbox}{max width=\textwidth,
+                  max totalheight=0.88\textheight,
+                  keepaspectratio}
+\begin{threeparttable}
+\small
+\renewcommand{\arraystretch}{1.07}
+\setlength{\tabcolsep}{8pt}
+
+\begin{tabular}{lccc}
+\toprule
+& (1) & (2) & (3) \\
+& Any bid & Bid amount & Winner \\
+\midrule
+
+\multicolumn{4}{l}{\textit{Panel A: Auction mechanism}} \\[2pt]
+
+Symmetric RP
+    & $0.00$
+    & $-3{,}658$
+    & $0.00$ \\
+    & $(0.01)$
+    & $(6{,}233)$
+    & $(0.04)$ \\
+
+Asymmetric RP
+    & $-0.01$
+    & $-26{,}434^{***}$
+    & $0.01$ \\
+    & $(0.01)$
+    & $(5{,}734)$
+    & $(0.04)$ \\
+
+Bundle
+    & $0.01$
+    & $58{,}199^{***}$
+    & $-0.00$ \\
+    & $(0.01)$
+    & $(9{,}551)$
+    & $(0.04)$ \\
+
+Bundle + Symmetric RP
+    & $-0.01$
+    & $61{,}690^{***}$
+    & $0.00$ \\
+    & $(0.01)$
+    & $(8{,}236)$
+    & $(0.04)$ \\
+
+\addlinespace
+\multicolumn{4}{l}{\textit{Panel B: Dealer characteristics}} \\[2pt]
+
+Owns transportation used for business
+    & $-0.01$
+    & $3{,}702$
+    & $0.07^{*}$ \\
+    & $(0.01)$
+    & $(5{,}980)$
+    & $(0.03)$ \\
+
+Human resources
+    & $0.00^{*}$
+    & $340^{***}$
+    & $0.00^{***}$ \\
+    & $(0.00)$
+    & $(52)$
+    & $(0.00)$ \\
+
+Uses a paper-based business record system
+    & $-0.01$
+    & $16{,}675^{*}$
+    & $-0.01$ \\
+    & $(0.01)$
+    & $(6{,}760)$
+    & $(0.03)$ \\
+
+Wholesaler
+    & $-0.00$
+    & $12{,}317^{*}$
+    & $0.04$ \\
+    & $(0.01)$
+    & $(5{,}641)$
+    & $(0.02)$ \\
+
+Number of villages served by deliveries
+    & $-0.00^{*}$
+    & $-5^{**}$
+    & $-0.00$ \\
+    & $(0.00)$
+    & $(2)$
+    & $(0.00)$ \\
+
+Previously obtained credit for the business
+    & $-0.00$
+    & $-10{,}257$
+    & $-0.07^{**}$ \\
+    & $(0.01)$
+    & $(5{,}659)$
+    & $(0.03)$ \\
+
+Participated in an agricultural-input fair
+    & $0.01$
+    & $2{,}220$
+    & $0.02$ \\
+    & $(0.01)$
+    & $(5{,}381)$
+    & $(0.02)$ \\
+
+\addlinespace
+Constant
+    & $0.99^{***}$
+    & $73{,}470^{***}$
+    & $0.14^{**}$ \\
+    & $(0.01)$
+    & $(9{,}669)$
+    & $(0.04)$ \\
+
+\midrule
+Observations
+    & 1,192 & 1,172 & 1,189 \\
+$R^{2}$
+    & 0.01 & 0.00 & 0.04 \\
+Zero bids
+    & Included & Excluded & Excluded \\
+RMSE
+    & 0.129 & 88,977 & 0.396 \\
+\bottomrule
+\end{tabular}
+
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} RP denotes reserve price. Robust standard errors are
+reported in parentheses. The dependent variables are an indicator for
+submitting any bid in column (1), the bid amount in column (2), and an
+indicator for winning in column (3). Survey-variable labels have been
+translated from French and shortened for readability. Significance levels
+are $^{***}p<0.001$, $^{**}p<0.01$, and $^{*}p<0.05$.
+\end{tablenotes}
+
+\end{threeparttable}
+\end{adjustbox}
+\end{table}
+
+\end{document}

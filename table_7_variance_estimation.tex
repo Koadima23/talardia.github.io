@@ -1,0 +1,122 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.85in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{caption}
+\usepackage{adjustbox}
+
+\begin{document}
+
+\begin{table}[!htbp]
+\centering
+\caption{Variance Estimation Results for Individual Bidding, with Valuation-Report Controls}
+\label{tab:variance_estimation}
+
+\begin{adjustbox}{max width=\textwidth,
+                  max totalheight=0.88\textheight,
+                  keepaspectratio}
+\begin{threeparttable}
+\small
+\renewcommand{\arraystretch}{1.07}
+\setlength{\tabcolsep}{10pt}
+
+\begin{tabular}{lcc}
+\toprule
+& \multicolumn{2}{c}{Dependent variable: Standardized bid} \\
+\cmidrule(lr){2-3}
+& (1) & (2) \\
+\midrule
+
+\multicolumn{3}{l}{\textit{Panel A: Auction mechanism}} \\[2pt]
+
+Symmetric RP
+    & $0.158$
+    & $0.273$ \\
+    & $(0.474)$
+    & $(0.470)$ \\
+
+Asymmetric RP
+    & $-0.313$
+    & $-0.439$ \\
+    & $(0.373)$
+    & $(0.279)$ \\
+
+Bundle
+    & $0.002$
+    & $-0.073$ \\
+    & $(0.365)$
+    & $(0.345)$ \\
+
+Bundle + Symmetric RP
+    & $-0.020$
+    & $-0.132$ \\
+    & $(0.416)$
+    & $(0.399)$ \\
+
+\addlinespace
+\multicolumn{3}{l}{\textit{Panel B: Dealer characteristics}} \\[2pt]
+
+Owns transportation used for business
+    & & $-0.374$ \\
+    & & $(0.252)$ \\
+
+Human resources
+    & & $-0.015$ \\
+    & & $(0.044)$ \\
+
+Uses a paper-based business record system
+    & & $-0.758^{*}$ \\
+    & & $(0.270)$ \\
+
+Wholesaler
+    & & $0.178$ \\
+    & & $(0.236)$ \\
+
+Number of villages served by deliveries
+    & & $0.031$ \\
+    & & $(0.017)$ \\
+
+Previously obtained credit for the business
+    & & $0.307$ \\
+    & & $(0.257)$ \\
+
+Participated in an agricultural-input fair
+    & & $-0.210$ \\
+    & & $(0.274)$ \\
+
+\addlinespace
+Constant
+    & $0.042$
+    & $0.751^{*}$ \\
+    & $(0.278)$
+    & $(0.307)$ \\
+
+\midrule
+Observations
+    & 66 & 66 \\
+$R^{2}$
+    & 0.033 & 0.212 \\
+Number of dealers
+    & 14 & 14 \\
+Dealer fixed effects
+    & Yes & Yes \\
+RMSE
+    & 0.823 & 0.790 \\
+\bottomrule
+\end{tabular}
+
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} RP denotes reserve price. Robust standard errors are
+reported in parentheses. Both specifications include dealer fixed effects.
+Survey-variable labels have been translated from French and shortened for
+readability. Significance levels are $^{***}p<0.001$,
+$^{**}p<0.01$, and $^{*}p<0.05$.
+\end{tablenotes}
+
+\end{threeparttable}
+\end{adjustbox}
+\end{table}
+
+\end{document}

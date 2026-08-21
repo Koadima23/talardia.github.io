@@ -1,0 +1,141 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{caption}
+\usepackage{adjustbox}
+
+\begin{document}
+
+\begin{table}[!htbp]
+\centering
+\caption{Individual Bidding by Auction Mechanism and Information Type}
+\label{tab:individual_bidding}
+\begin{threeparttable}
+
+\small
+\renewcommand{\arraystretch}{1.05}
+
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lccc}
+\toprule
+& \multicolumn{3}{c}{Dependent variable: Bid} \\
+\cmidrule(lr){2-4}
+& (1) & (2) & (3) \\
+\midrule
+
+\multicolumn{4}{l}{\textit{Panel A: Regression estimates}} \\[2pt]
+
+Proportional revenue
+    & $-26{,}107^{*}$
+    & $-20{,}858$
+    & $-31{,}479^{**}$ \\
+    & $(10{,}518)$
+    & $(10{,}691)$
+    & $(10{,}181)$ \\
+
+Marginal cost
+    & $-2{,}944$
+    & $-2{,}850$
+    & $-8{,}823$ \\
+    & $(7{,}957)$
+    & $(7{,}937)$
+    & $(8{,}132)$ \\
+
+Bundle without reserve price
+    & $-44{,}770^{***}$
+    & $-60{,}426^{***}$
+    & $-113{,}338^{**}$ \\
+    & $(6{,}734)$
+    & $(7{,}105)$
+    & $(27{,}635)$ \\
+
+Bundle with marginal cost
+    & $13{,}567$
+    & $-2{,}884$
+    & $-47{,}395$ \\
+    & $(10{,}547)$
+    & $(12{,}496)$
+    & $(31{,}359)$ \\[2pt]
+
+Expected revenue: tercile 1
+    & & $-27{,}910^{***}$ & \\
+    & & $(6{,}405)$ & \\
+
+Expected revenue: tercile 2
+    & & $-7{,}267$ & \\
+    & & $(4{,}983)$ & \\[2pt]
+
+Population
+    & & & $-84^{*}$ \\
+    & & & $(29)$ \\
+
+Urea and NPK
+    & & & $70^{**}$ \\
+    & & & $(18)$ \\
+
+Fertinova (50 kg)
+    & & & $395^{*}$ \\
+    & & & $(143)$ \\
+
+Insecticide and herbicide
+    & & & $773^{***}$ \\
+    & & & $(164)$ \\
+
+Seeds (kg)
+    & & & $76^{*}$ \\
+    & & & $(32)$ \\[2pt]
+
+Constant
+    & $96{,}221^{***}$
+    & $113{,}674^{***}$
+    & $66{,}427^{***}$ \\
+    & $(5{,}462)$
+    & $(8{,}196)$
+    & $(15{,}310)$ \\
+
+\midrule
+\multicolumn{4}{l}{\textit{Panel B: Holm-adjusted pairwise-comparison $p$-values}} \\[2pt]
+
+Proportional revenue vs.\ marginal cost
+    & 0.061 & 0.164 & 0.055 \\
+
+Proportional revenue vs.\ bundle without reserve
+    & 0.061 & $<0.001$ & 0.034 \\
+
+Proportional revenue vs.\ bundle with marginal cost
+    & $<0.001$ & 0.164 & 0.586 \\
+
+Marginal cost vs.\ bundle without reserve
+    & 0.001 & $<0.001$ & 0.006 \\
+
+Marginal cost vs.\ bundle with marginal cost
+    & 0.149 & 0.998 & 0.401 \\
+
+Bundle without reserve vs.\ bundle with marginal cost
+    & $<0.001$ & $<0.001$ & $<0.001$ \\
+
+\midrule
+Observations & 995 & 995 & 995 \\
+$R^{2}$ & 0.000 & 0.117 & 0.000 \\
+Number of dealers & 14 & 14 & 14 \\
+RMSE & 58,431 & 57,866 & 57,661 \\
+Dealer fixed effects & No & Yes & Yes \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} Robust standard errors are reported in parentheses.
+Panel B reports Holm-adjusted $p$-values for pairwise comparisons between
+auction mechanisms. The omitted expected-revenue tercile is the reference
+category. Significance levels are
+$^{***}p<0.001$, $^{**}p<0.01$, and $^{*}p<0.05$.
+\end{tablenotes}
+
+\end{threeparttable}
+\end{table}
+
+\end{document}

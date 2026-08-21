@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{caption}
+\usepackage{adjustbox}
+\usepackage{makecell}
+
+\begin{document}
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary Statistics of Bids by Treatment Arm}
+\label{tab:bid_summary_statistics}
+
+\begin{adjustbox}{max width=\textwidth,
+                  max totalheight=0.88\textheight,
+                  keepaspectratio}
+\begin{threeparttable}
+\small
+\renewcommand{\arraystretch}{1.10}
+\setlength{\tabcolsep}{6pt}
+
+\begin{tabular}{lccccc}
+\toprule
+& \multicolumn{5}{c}{Treatment arm} \\
+\cmidrule(lr){2-6}
+& Control
+& \makecell{Symmetric\\RP}
+& \makecell{Asymmetric\\RP}
+& Bundle
+& \makecell{Bundle +\\Symmetric RP} \\
+\midrule
+
+\multicolumn{6}{l}{\textit{Panel A: All bids}} \\[2pt]
+Mean
+    & 94,927 & 91,770 & 66,164 & 153,371 & 153,973 \\
+Standard deviation
+    & 73,327 & 68,608 & 53,091 & 130,984 & 106,303 \\
+Median
+    & 65,000 & 75,000 & 50,000 & 120,000 & 115,000 \\
+Variance (millions)
+    & 5,377 & 4,707 & 2,819 & 17,157 & 11,300 \\
+Minimum
+    & 0 & 0 & 0 & 0 & 0 \\
+Maximum
+    & 315,000 & 300,000 & 275,000 & 700,000 & 650,000 \\
+Observations
+    & 243 & 243 & 245 & 241 & 237 \\
+
+\addlinespace
+\multicolumn{6}{l}{\textit{Panel B: Bids above the reserve price, excluding zero bids}} \\[2pt]
+Mean
+    & 96,516 & 93,254 & 70,271 & 154,654 & 158,871 \\
+Standard deviation
+    & 72,892 & 68,201 & 53,160 & 130,774 & 104,703 \\
+Median
+    & 70,000 & 75,000 & 50,000 & 120,000 & 125,000 \\
+Variance (millions)
+    & 5,313 & 4,651 & 2,826 & 17,102 & 10,963 \\
+Zero bids (\%)
+    & 1.6 & 1.2 & 2.0 & 0.8 & 2.5 \\
+
+\bottomrule
+\end{tabular}
+
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} RP denotes reserve price. Variances are divided by
+$1{,}000{,}000$ and are therefore reported in millions. Panel B excludes
+zero bids and bids less than or equal to the applicable reserve price.
+\end{tablenotes}
+
+\end{threeparttable}
+\end{adjustbox}
+\end{table}
+
+\end{document}

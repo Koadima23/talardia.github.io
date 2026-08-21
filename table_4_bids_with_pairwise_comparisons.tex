@@ -1,0 +1,148 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{caption}
+\usepackage{adjustbox}
+
+\begin{document}
+
+\begin{table}[!htbp]
+\centering
+\caption{Individual Bidding by Auction Mechanism and Information Type, with Valuation-Report Controls}
+\label{tab:bids_pairwise_comparisons}
+
+\begin{adjustbox}{max width=\textwidth,
+                  max totalheight=0.88\textheight,
+                  keepaspectratio}
+\begin{threeparttable}
+\small
+\renewcommand{\arraystretch}{1.05}
+\setlength{\tabcolsep}{8pt}
+
+\begin{tabular}{lccc}
+\toprule
+& \multicolumn{3}{c}{Dependent variable: Bid} \\
+\cmidrule(lr){2-4}
+& (1) & (2) & (3) \\
+\midrule
+
+\multicolumn{4}{l}{\textit{Panel A: Auction mechanism}} \\[2pt]
+
+Symmetric RP
+    & $-3{,}251$
+    & $-3{,}148$
+    & $-10{,}087$ \\
+    & $(7{,}939)$
+    & $(7{,}917)$
+    & $(9{,}075)$ \\
+
+Asymmetric RP
+    & $-25{,}602^{*}$
+    & $-20{,}360$
+    & $-32{,}670^{*}$ \\
+    & $(10{,}661)$
+    & $(10{,}845)$
+    & $(10{,}972)$ \\
+
+Bundle
+    & $58{,}402^{***}$
+    & $28{,}724^{**}$
+    & $-69{,}103^{*}$ \\
+    & $(10{,}067)$
+    & $(7{,}802)$
+    & $(30{,}742)$ \\
+
+Bundle + Symmetric RP
+    & $62{,}238^{**}$
+    & $32{,}358$
+    & $-56{,}767$ \\
+    & $(16{,}342)$
+    & $(17{,}426)$
+    & $(31{,}601)$ \\
+
+\addlinespace
+\multicolumn{4}{l}{\textit{Panel B: Valuation-report controls}} \\[2pt]
+
+Expected revenue: tercile 1
+    & & $-46{,}519^{***}$ & \\
+    & & $(10{,}982)$ & \\
+
+Expected revenue: tercile 2
+    & & $-25{,}946^{*}$ & \\
+    & & $(9{,}355)$ & \\
+
+Population
+    & & & $-50$ \\
+    & & & $(37)$ \\
+
+Urea, DAP, and NPK
+    & & & $74^{**}$ \\
+    & & & $(20)$ \\
+
+Fertinova (50 kg)
+    & & & $575^{*}$ \\
+    & & & $(265)$ \\
+
+Insecticide and herbicide
+    & & & $1{,}384^{**}$ \\
+    & & & $(330)$ \\
+
+Seeds (kg)
+    & & & $105^{*}$ \\
+    & & & $(40)$ \\
+
+\addlinespace
+Constant
+    & $96{,}359^{***}$
+    & $132{,}453^{***}$
+    & $39{,}139$ \\
+    & $(6{,}346)$
+    & $(10{,}713)$
+    & $(21{,}899)$ \\
+
+\midrule
+\multicolumn{4}{l}{\textit{Panel C: Pairwise-comparison $p$-values}} \\[2pt]
+
+Symmetric RP vs. Asymmetric RP
+    & 0.0640 & 0.249 & 0.0641 \\
+Symmetric RP vs. Bundle
+    & 0.000246 & 0.0118 & 0.213 \\
+Symmetric RP vs. Bundle + Symmetric RP
+    & 0.00652 & 0.249 & 0.383 \\
+Asymmetric RP vs. Bundle
+    & 0.000236 & 0.0118 & 0.923 \\
+Asymmetric RP vs. Bundle + Symmetric RP
+    & $1.59\times10^{-5}$ & 0.00874 & 0.923 \\
+Bundle vs. Bundle + Symmetric RP
+    & 0.825 & 0.834 & 0.923 \\
+
+\midrule
+Observations
+    & 1,172 & 1,172 & 1,172 \\
+$R^{2}$
+    & 0.000 & 0.000 & 0.000 \\
+Number of dealers
+    & 14 & 14 & 14 \\
+RMSE
+    & 89,724 & 89,194 & 88,768 \\
+Dealer fixed effects
+    & Yes & Yes & Yes \\
+\bottomrule
+\end{tabular}
+
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} RP denotes reserve price. Robust standard errors are
+reported in parentheses. All specifications include dealer fixed effects.
+The omitted expected-revenue tercile is the reference category. Panel C
+reports pairwise-comparison $p$-values. Significance levels are
+$^{***}p<0.001$, $^{**}p<0.01$, and $^{*}p<0.05$.
+\end{tablenotes}
+
+\end{threeparttable}
+\end{adjustbox}
+\end{table}
+
+\end{document}

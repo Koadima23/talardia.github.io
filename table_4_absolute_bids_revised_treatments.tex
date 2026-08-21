@@ -1,0 +1,132 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.8in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{caption}
+\usepackage{adjustbox}
+
+\begin{document}
+
+\begin{table}[!htbp]
+\centering
+\caption{Individual Absolute Bidding by Auction Mechanism and Information Type, with Valuation-Report Controls}
+\label{tab:absolute_bids_revised_treatments}
+
+\begin{adjustbox}{max width=\textwidth,
+                  max totalheight=0.88\textheight,
+                  keepaspectratio}
+\begin{threeparttable}
+\small
+\renewcommand{\arraystretch}{1.07}
+\setlength{\tabcolsep}{8pt}
+
+\begin{tabular}{lccc}
+\toprule
+& \multicolumn{3}{c}{Dependent variable: Absolute bid} \\
+\cmidrule(lr){2-4}
+& (1) & (2) & (3) \\
+\midrule
+
+\multicolumn{4}{l}{\textit{Panel A: Auction mechanism}} \\[2pt]
+
+Symmetric RP
+    & $-1{,}450$
+    & $-1{,}365$
+    & $73$ \\
+    & $(3{,}676)$
+    & $(3{,}664)$
+    & $(5{,}284)$ \\
+
+Asymmetric RP
+    & $1{,}236$
+    & $1{,}382$
+    & $2{,}698$ \\
+    & $(3{,}847)$
+    & $(3{,}606)$
+    & $(3{,}806)$ \\
+
+Bundle
+    & $23{,}193^{*}$
+    & $7{,}760$
+    & $-96{,}975^{***}$ \\
+    & $(8{,}707)$
+    & $(7{,}560)$
+    & $(28{,}288)$ \\
+
+Bundle + Symmetric RP
+    & $8{,}483$
+    & $-7{,}021$
+    & $-125{,}956^{***}$ \\
+    & $(10{,}521)$
+    & $(11{,}473)$
+    & $(24{,}740)$ \\
+
+\addlinespace
+\multicolumn{4}{l}{\textit{Panel B: Valuation-report controls}} \\[2pt]
+
+Expected revenue: tercile 1
+    & & $-20{,}809^{*}$ & \\
+    & & $(9{,}693)$ & \\
+
+Expected revenue: tercile 2
+    & & $-19{,}766^{*}$ & \\
+    & & $(9{,}335)$ & \\
+
+Population
+    & & & $107^{***}$ \\
+    & & & $(27)$ \\
+
+Urea, DAP, and NPK
+    & & & $33^{*}$ \\
+    & & & $(16)$ \\
+
+Fertinova (50 kg)
+    & & & $369$ \\
+    & & & $(262)$ \\
+
+Insecticide and herbicide
+    & & & $640$ \\
+    & & & $(364)$ \\
+
+Seeds (kg)
+    & & & $6$ \\
+    & & & $(26)$ \\
+
+\addlinespace
+Constant
+    & $63{,}321^{***}$
+    & $80{,}783^{***}$
+    & $2{,}340$ \\
+    & $(4{,}175)$
+    & $(10{,}453)$
+    & $(15{,}180)$ \\
+
+\midrule
+Observations
+    & 1,172 & 1,172 & 1,172 \\
+$R^{2}$
+    & 0.000 & --- & --- \\
+Number of dealers
+    & 14 & 14 & 14 \\
+Dealer fixed effects
+    & Yes & Yes & Yes \\
+RMSE
+    & 64,089 & 64,251 & 64,573 \\
+\bottomrule
+\end{tabular}
+
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} RP denotes reserve price. Robust standard errors are
+reported in parentheses. All specifications include dealer fixed effects.
+The omitted expected-revenue tercile is the reference category. Dashes
+indicate statistics not reported in the source output. Significance levels
+are $^{***}p<0.001$, $^{**}p<0.01$, and $^{*}p<0.05$.
+\end{tablenotes}
+
+\end{threeparttable}
+\end{adjustbox}
+\end{table}
+
+\end{document}
