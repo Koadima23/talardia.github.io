@@ -1,17 +1,21 @@
 ---
-title: Teaching Assistant at Cornell
+title: ''
 type: page
+toc: false
 ---
 
-**Instructor**
+### Instructor
 
-**Math Camp for Incoming MS Students in Applied Economics**
-August 2026
+**Math Camp**  
+*Cornell University · Summer 2026*  
+Preparatory mathematics course for incoming M.S. students in Applied Economics and Management.
 
-**Teaching Assistant**
+### Teaching Assistant
 
-**AEM 7021: General Equilibrium Analysis** (PhD)
-Spring 2026, Instructor: Nancy H. Chau
+**AEM 7021: General Equilibrium Analysis**  
+*Cornell University · Spring 2026*  
+PhD course. Instructor: Nancy H. Chau
 
-**AEM 2400: Introduction to Marketing** (Undergraduate)
-Fall 2025, Instructor: Sylvia Hristakeva
+**AEM 2400: Introduction to Marketing**  
+*Cornell University · Fall 2025*  
+Undergraduate course. Instructor: Sylvia Hristakeva

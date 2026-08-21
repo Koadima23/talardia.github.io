@@ -136,3 +136,56 @@ body {
 footer.container {
   display: none !important;
 }
+
+/* Widen standalone pages */
+article main {
+  max-width: 100% !important;
+}
+
+article .prose {
+  max-width: 100% !important;
+}
+
+/* Widen standalone pages */
+main.max-w-6xl {
+  max-width: 100% !important;
+}
+
+.prose.prose-slate {
+  max-width: 100% !important;
+}
+
+/* Remove centering constraint on standalone pages */
+article.w-full.flex {
+  display: block !important;
+}
+
+/* Remove centering constraint on standalone pages */
+article.w-full.flex {
+  display: block !important;
+}
+
+/* Widen standalone pages */
+article.w-full.flex {
+  justify-content: flex-start !important;
+}
+article.w-full.flex > main.w-full {
+  width: 100% !important;
+  max-width: none !important;
+}
+article.w-full.flex > main.w-full > .prose {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Increase the width of standalone page content */
+article.w-full > main.w-full > div.prose {
+  width: 100% !important;
+  max-width: 110ch !important;
+}
+
+/* Final width of the page text area */
+article.w-full.flex > main.w-full > .prose {
+  width: 100% !important;
+  max-width: 110ch !important;
+}
