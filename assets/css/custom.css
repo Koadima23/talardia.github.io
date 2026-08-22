@@ -189,3 +189,50 @@ article.w-full.flex > main.w-full > .prose {
   width: 100% !important;
   max-width: 110ch !important;
 }
+
+/* Reduce side padding on standalone pages */
+article.w-full.flex > main.w-full {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+/* Reduce side padding on standalone pages */
+article.w-full.flex > main.w-full {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+/* Hide empty sidebar on standalone pages */
+.hb-sidebar-container {
+  display: none !important;
+}
+
+/* Widen the docs layout wrapper */
+.mx-auto.flex.max-w-screen-xl {
+  max-width: 100% !important;
+}
+
+/* Center content on standalone pages with readable width */
+article.w-full.flex {
+  justify-content: center !important;
+}
+
+article.w-full.flex > main.w-full {
+  max-width: 900px !important;
+}
+
+/* Smaller text on standalone pages */
+article .prose {
+  font-size: 1.125rem !important;
+}
+
+article .prose h3 {
+  font-size: 1.25rem !important;
+}
+
+/* Let main shrink so centering works */
+article.w-full.flex > main.w-full {
+  width: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
